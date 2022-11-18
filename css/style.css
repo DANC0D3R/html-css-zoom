@@ -1,45 +1,159 @@
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* REGOLE GENERALI */
-.flex{
+
+.flex {
     display: flex;
 }
 
-.button{
+button {
     cursor: pointer;
 }
 
-
-
-
-/* MAIN */
-
-/* REGOLE GENERALI */
-main{
-    height: 100vh;
-    background-color: lightblue;
+.clearifix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.top-bar{
-    height: 5%;
-    padding: 5px 10px;
-    text-align: right;
+
+
+/* ----- MAIN ----- */
+
+/* REGOLE GENERALI */
+main {
+    height: 100vh;
     background-color: #000000;
 }
 
-.top-bar button{
+/* TOP SECTION */
+.top-bar {
+    height: 5%;
+    padding: 5px 10px;
+    background-color: #000000;
+    text-align: right;
+}
+
+.top-bar button {
     padding: 5px;
-    color: #FFFFFF;
-    border: none;
+    background-color: #4A4A4A;
+    color: white;
     border-radius: 3px;
+    border: none;
 }
 
 
+/* CAM SECTION */
+.cam-section {
+    height: 87%;
+    padding: 45px 50px;
+    background-color: black;
+    overflow-y: scroll;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.user {
+    padding: 5px;
+    margin-bottom: 10px;
+    height: 180px;
+    width: 300px;
+}
+
+.user-pic {
+    height: 100%;
+    background-image: url('https://picsum.photos/200/300');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.username {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    color: white;
+    font-size: 0.8em;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* BARRA DEGLI STRUMENTI */
+.tool-bar {
+    height: 8%;
+    background-color: #222222;
+    padding-left: 5px;
+}
+
+.tool-bar button {
+    background: none;
+    border: none;
+    height: 100%;
+    padding: 0 8px;
+    color: white;
+
+    vertical-align: top;
+}
+
+.tool-bar button:active {
+    background-color: #2c2c2c;
+}
+
+.tool-bar i {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.tool-bar .options {
+    font-size: 6px;
+    padding: 0;
+}
+
+/* BARRA DEGLI STRUMENTI */
+.video-control {
+    width: 25%;
+    height: 100%;
+}
+
+.mic, .cam {
+    height: 100%;
+    float: left;
+    margin-right: 5px;
+}
+
+/* STRUMENTI MEETING */
+.meeting-tools {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.share i{
+    color: #4BC800;
+}
+
+/* FINE RIUNIONE */
+.end-meeting {
+    width: 25%;
+    height: 100%;
+    text-align: right;
+}
+
+.end-meeting button {
+    background-color: #4A4A4A;
+    padding: 0 20px;
+    color: red;    /* chi ha deciso di fare la scritta rossa su fondo grigio merita la galera (mio parere, eh)  */
+}
 
 
-/* DEBUG */
