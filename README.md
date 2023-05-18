@@ -11,3 +11,6 @@ Consigli:
 1. Teniamo sempre un approccio ordinato, quindi come sempre pensiamo prima a far funzionare le macroaree, se quelle funzionano allora passiamo al dettaglio.
 2. Visto la struttura del layout, forse stavolta potrebbero tornarci utili vw e vh! ;)
 3. Per inserire delle immagini segnaposto è possibile utilizzare un servizio tipo lorem ipsum ma per le immagini, come questo: https://picsum.photos/
+
+<h1 align="center">Anteprima<h1>
+<div align="center"><img src="Traccia Esercizio.png" width="800">
